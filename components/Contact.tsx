@@ -29,8 +29,8 @@
 //       <SectionHeading>Contact Me</SectionHeading>
 //       <p className="text-gray-700 -mt-6 dark:text-white/80">
 //         Please contact me directly at{" "}
-//         <a className="underline" href="mailto:joyyujiepeng@gmail.com">
-//           joyyujiepeng@gmail.com
+//         <a className="underline" href="mailto:patricereddick902@yahoo.com">
+//           patricereddick902@yahoo.com
 //         </a>{" "}
 //         or through this form.
 //       </p>

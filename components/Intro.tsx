@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { MdEmail } from "react-icons/md";
 import { FaGithubSquare } from "react-icons/fa";
 import { Source_Code_Pro } from "next/font/google";
 import { useSectionInView } from "@/lib/hooks";
@@ -143,10 +143,16 @@ export default function Intro() {
 
         <a
           className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/shiny902"
+          href="https://github.com/patrice902"
           target="_blank"
         >
           <FaGithubSquare />
+        </a>
+        <a
+          className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="mailto:patricereddick902@yahoo.com"
+        >
+          <MdEmail />
         </a>
       </motion.div>
     </section>
