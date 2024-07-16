@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
-import React from "react"
-import { headerLanguageMap, skillsData } from "@/lib/data"
-import { useSectionInView } from "@/lib/hooks"
-import { motion } from "framer-motion"
-import SectionHeading from "./SectionHeading"
-import { useLocale } from "next-intl"
+import React from "react";
+import { skillsData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+import SectionHeading from "./SectionHeading";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -19,23 +18,18 @@ const fadeInAnimationVariants = {
       delay: 0.05 * index,
     },
   }),
-}
+};
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills")
-  const activeLocale = useLocale()
+  const { ref } = useSectionInView("Skills");
+
   return (
     <section
       id="skills"
       ref={ref}
       className=" max-w-[53rem] scroll-mt-28 text-center mb-28"
     >
-      <SectionHeading>
-        {" "}
-        {activeLocale === "zh"
-          ? headerLanguageMap["Skills"]
-          : "My Skills"}
-      </SectionHeading>
+      <SectionHeading>My Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -54,5 +48,5 @@ export default function Skills() {
         ))}
       </ul>
     </section>
-  )
+  );
 }

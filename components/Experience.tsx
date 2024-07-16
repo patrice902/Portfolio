@@ -1,24 +1,19 @@
-"use client"
+"use client";
 
-import React from "react"
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component"
-import "react-vertical-timeline-component/style.min.css"
-import {
-  experiencesData,
-  experiencesDataZn,
-  headerLanguageMap,
-} from "@/lib/data"
-import SectionHeading from "./SectionHeading"
-import { motion } from "framer-motion"
-import { useTheme } from "@/context/theme-context"
-import { ExperienceLabel } from "./ExperienceLabel"
-import { useLocale } from "next-intl"
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { experiencesData } from "@/lib/data";
+import SectionHeading from "./SectionHeading";
+import { motion } from "framer-motion";
+import { useTheme } from "@/context/theme-context";
+import { ExperienceLabel } from "./ExperienceLabel";
 
 export default function Experience({ isMobile }: { isMobile: boolean }) {
-  const { theme } = useTheme()
+  const { theme } = useTheme();
   const variants = {
     left: {
       hidden: { x: -200, opacity: 0 },
@@ -28,25 +23,15 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
       hidden: { x: 200, opacity: 0 },
       visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
     },
-  }
-
-  const activeLocale = useLocale()
-
-  const experienceDataShown =
-    activeLocale == "zh" ? experiencesDataZn : experiencesData
+  };
 
   return (
     <section className="sm:mb-40 relative mb-20">
       <ExperienceLabel />
-      <SectionHeading>
-        {" "}
-        {activeLocale === "zh"
-          ? headerLanguageMap["Experiences"]
-          : "My Experiences"}
-      </SectionHeading>
+      <SectionHeading> My Experiences</SectionHeading>
       {!isMobile ? (
         <VerticalTimeline lineColor={theme == "light" ? "#e9e9ea" : "#3b3d4f"}>
-          {experienceDataShown.map((item, index) => (
+          {experiencesData.map((item, index) => (
             <motion.div
               key={index}
               initial="hidden"
@@ -91,7 +76,7 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
         </VerticalTimeline>
       ) : (
         <div className="flex flex-col gap-6">
-          {experienceDataShown.map((item, index) => (
+          {experiencesData.map((item, index) => (
             <div
               key={index}
               className={`flex dark:bg-slate-800 dark:text-slate-100 bg-slate-100 border-1 border-opacity-80 rounded-lg p-6 pb-8 flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8 `}
@@ -112,5 +97,5 @@ export default function Experience({ isMobile }: { isMobile: boolean }) {
         </div>
       )}
     </section>
-  )
+  );
 }

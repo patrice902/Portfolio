@@ -6,7 +6,6 @@ import { ActionSectionContextProvider } from "@/context/action-section-context"
 import Footer from "@/components/Footer"
 import ThemeSwitch from "@/components/ThemeTwich"
 // import { usePathname } from "next/navigation"
-import LanguageSwitch from "@/components/LanguageSwitch"
 import { NextIntlClientProvider, useMessages } from "next-intl"
 import WidgetWrapper from "@/components/WidgetWrapper"
 
@@ -38,7 +37,6 @@ export default function RootLayout({
               <Footer />
               <WidgetWrapper>
                 <ThemeSwitch />
-                <LanguageSwitch />
               </WidgetWrapper>
             </ActionSectionContextProvider>
           </ThemeContextProvider>

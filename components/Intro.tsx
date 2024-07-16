@@ -1,27 +1,24 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { BsArrowRight, BsLinkedin } from "react-icons/bs"
-import { HiDownload } from "react-icons/hi"
-import { FaGithubSquare } from "react-icons/fa"
-import Link from "next/link"
-import { Source_Code_Pro } from "next/font/google"
-import { useLocale } from "next-intl"
-import { useSectionInView } from "@/lib/hooks"
-import { TypeAnimation } from "react-type-animation"
-import { useActiveSectionContext } from "@/context/action-section-context"
-import { useTranslations } from "next-intl"
-import useSound from "use-sound"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
+import { Source_Code_Pro } from "next/font/google";
+import { useSectionInView } from "@/lib/hooks";
+import { TypeAnimation } from "react-type-animation";
+import { useActiveSectionContext } from "@/context/action-section-context";
+import { useTranslations } from "next-intl";
+import useSound from "use-sound";
 
-const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], weight: "400" })
+const sourceCodePro = Source_Code_Pro({ subsets: ["latin"], weight: "400" });
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home")
-  const activeLocale = useLocale()
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
-  const t = useTranslations("IntroSection")
-  const [playHover] = useSound("/bubble.wav", { volume: 0.5 })
+  const { ref } = useSectionInView("Home");
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const t = useTranslations("IntroSection");
+  const [playHover] = useSound("/bubble.wav", { volume: 0.5 });
 
   return (
     <section
@@ -37,19 +34,19 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="/profile.png"
+              src="/profile.jpg"
               alt="developer-image"
-              width="250"
-              height="250"
+              width="350"
+              height="350"
               quality="95"
               priority={true}
-              className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
           <motion.span
             onHoverStart={() => {
-              console.log("sound")
-              playHover()
+              console.log("sound");
+              playHover();
             }}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -96,9 +93,9 @@ export default function Intro() {
             >
               <TypeAnimation
                 sequence={[
-                  "Frontend Developer",
+                  "Senior Frontend Developer",
                   1000,
-                  "Full Stack Developer",
+                  "Senior Full Stack Developer",
                   1000,
                 ]}
                 wrapper="span"
@@ -109,12 +106,9 @@ export default function Intro() {
           </div>
         </motion.div>
         <p>{t("short_intro")}</p>
-        {activeLocale === "en" && (
-          <p>
-            My focus is{" "}
-            <span className="italic font-bold">React (Next.js)</span>.
-          </p>
-        )}
+        <p>
+          My focus is <span className="italic font-bold">React and Node</span>.
+        </p>
       </motion.h1>
 
       <motion.div
@@ -137,9 +131,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link> */}
         <a
-          href={
-            activeLocale == "en" ? "/Joy-fullstack.pdf" : "/前端开发-彭郁洁.pdf"
-          }
+          href={"/Patrice-Resume.pdf"}
           download={true}
           className=" bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
 
@@ -148,31 +140,15 @@ export default function Intro() {
           {t("download_cv")}
           <HiDownload />
         </a>
-        <a
-          className="bg-white p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/joy-yujiepeng/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
 
         <a
           className="bg-white p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Codefreyy"
+          href="https://github.com/shiny902"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
-        <a
-          className=" bg-white py-2 px-3 text-sm text-gray-700 flex items-center gap-2  rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://blog-joy-peng.netlify.app"
-          target="_blank"
-        >
-          {t("blog")}
-
-          {/* <FaGithubSquare /> */}
-        </a>
       </motion.div>
     </section>
-  )
+  );
 }
