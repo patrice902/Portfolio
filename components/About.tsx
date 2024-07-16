@@ -22,77 +22,30 @@ export default function About() {
       <SectionHeading>{sectionLan("about")}</SectionHeading>
 
       <p className="mb-3">
-        My journey into programming kicked off during my undergrad in
-        <span className="font-medium italic"> Digital Publishing</span> at {}
-        <span className="italic underline">
-          <a
-            href="https://en.wikipedia.org/wiki/Wuhan_University"
-            target="_blank"
-          >
-            Wuhan University.
-          </a>
-        </span>{" "}
-        As a freshman, I got my feet wet with the basics of computer science,
-        databases, and Python. But what truly sparked my passion was a course on
-        semantic publishing—there, I used HTML and CSS to create a webpage
-        dedicated to my favorite figure skater,{" "}
-        <a
-          href="https://en.wikipedia.org/wiki/Yuzuru_Hanyu"
-          target="_blank"
-          className="italic underline"
-        >
-          Yuzuru Hanyu.{" "}
-        </a>
-        This experience opened my eyes to the charm of web development———
-        <span className="font-medium italic">
-          literally, you can build anything you envision with code.
-        </span>
+        I love bringing dreams to life, both personally and professionally!
+        <br />
+        This passion has driven my career primarily in startups. I enjoy solving
+        challenges and technical difficulties. As a man, I find fun and
+        excitement in overcoming them. <br />
+        "Believe and face it" I always say, diving into challenges bravely. 💪
       </p>
 
       <p className="mb-3">
-        I sharpened my front-end development skills through internships at
-        Internships at Wuhan University&apos;s Big Data Institute and later at{" "}
-        <span className="italic underline">
-          <a href="https://www.nio.com/careers" target="_blank">
-            {" "}
-            NIO Inc.
-          </a>
-        </span>{" "}
-        Working closely with developers, designers, testers, and product
-        managers, I loved the buzz of a team pulling together to make our
-        product better. And there’s nothing quite like the thrill of seeing my
-        own code being used by thousands—it’s what solidified my decision to
-        pursue a career in front-end development.
+        As a Senior Software Engineer with 10+ years of experience in web
+        development, specialized in building web apps and websites using modern
+        technologies like{" "}
+        <span className="font-medium italic">
+          React, Node, TypeScript, Next.js, and Remix
+        </span>
+        .
       </p>
 
       <p className="mb-3">
-        I’m now doing my Masters in
-        <span className="font-medium italic"> Computing and IT</span> at the{" "}
-        <span className="italic underline">
-          <a href="https://www.st-andrews.ac.uk/" target="_blank">
-            University of St Andrews.{" "}
-          </a>
-        </span>
-        I thrive on programming challenges and enjoy working with teams to solve
-        complex problems. I specialize in technologies such as
-        <span className="font-medium italic"> React, Next.js and Vue</span>, and
-        have a solid understanding of{" "}
-        <span className="font-medium italic">
-          JavaScript, TypeScript and HTML/CSS
-        </span>
-        .{" "}
-      </p>
-
-      <p>
-        In my spare time, I enjoy exploring new technologies and building
-        interesting projects. I also run my social media accounts on platforms
-        like Bilibili and Xiaohongshu, where I share tech tips and tricks. And
-        when I’m not at the computer, you’ll find me
-        <span className="font-medium italic">
-          {" "}
-          cooking up a storm, catching a movie, or keeping fit with regular
-          workouts.
-        </span>
+        In my spare time, I enjoy reading books and articles, especially about
+        trending technologies.
+        <br />
+        On weekends, I enjoy playing sports, including table tennis, tennis, and
+        badminton. I also enjoy playing video games. 😉
       </p>
     </motion.section>
   );

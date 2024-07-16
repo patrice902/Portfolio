@@ -13,7 +13,6 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
-  desc_zh,
   tags,
   imageUrl,
   projectUrl,
