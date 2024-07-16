@@ -2,6 +2,9 @@
 
 Welcome to my portfolio project! This repository features my personal portfolio website, inspired by [ByteGrad](https://www.youtube.com/watch?v=sUKptmUVIBM&t=21888s).
 
+![image](https://github.com/user-attachments/assets/0903cb22-d35f-4a43-a9f1-7d8d784e13f1)
+
+
 ## What I Did
 
 - Bug Fixes: Fixed the scrolling bug from the original project.
