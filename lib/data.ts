@@ -1,6 +1,5 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
-import { FaVuejs } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import breadditImage from "@/public/breaddit.png";
 import gameHubImage from "@/public/game-hub.png";
@@ -35,49 +34,95 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "MSc in Computing and IT",
-    location: "University of St Andrews, UK",
-    description:
-      "Achieved a Master's degree in Computing and IT, acquiring in-depth knowledge in areas such as Human Computer Interaction, Computer Communication Systems, and Information Security. Developed strong capabilities in computational thinking, user-centred design, and data visualisation, preparing for effective application in technology-driven environments",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023 Sep - 2024 May",
-  },
-  {
-    title: "Frontend Intern",
+    title: "Senior Full Stack Engineer",
     location: React.createElement(
       "span",
       {},
       React.createElement(
         "a",
         {
-          href: "https://www.nio.com/",
+          href: "https://evolutioniq.com/",
           style: { textDecoration: "underline" },
           target: "_blank",
         },
-        "NIO Inc."
+        "EvolutionIQ"
       ),
-      " Wuhan, China"
+      " | New York, NY"
     ),
     description:
-      "Developed NIO's third-generation station list and detail pages using Vue3, TypeScript, and Baidu Maps API. Implemented role-based access control for the Task Wizard page, enhancing system security. Collaborated effectively within a Jira-managed environment, utilizing Jenkins for deployment processes.",
-    icon: React.createElement(FaVuejs),
-    date: "2022 Aug - 2022 Dec",
-  },
-  {
-    title: "Frontend Assistant",
-    location: "Wuhan University | Wuhan, China",
-    description:
-      "Developed and maintained Finknow, a Financial Knowledge Graph Query and Analysis Platform using umi (React framework) and Ant Design Pro. Utilized graphin, a React toolkit for graph analysis based on G6, to develop an Equity Network Penetration Graph, enhancing data visualization capabilities.",
+      "Joined STD(Short Term Disability) team and built claims datatable, optimized it and improved it. Also, built claim analytics page. Used React.js, Material UI, TypeScript, Remix, Python, and FastAPI.",
     icon: React.createElement(FaReact),
-    date: "2022 May - 2022 July",
+    date: "Mar 2022 - Current",
   },
   {
-    title: "BA in Digital Publishing",
-    location: "Wuhan University, China",
+    title: "Senior Full Stack Engineer",
+    location: React.createElement(
+      "span",
+      {},
+      React.createElement(
+        "a",
+        {
+          href: "https://www.tradingpaints.com/",
+          style: { textDecoration: "underline" },
+          target: "_blank",
+        },
+        "Trading Paints"
+      ),
+      " | Allentown, PA"
+    ),
     description:
-      "Graduated with a Bachelor of Arts in Digital Publishing, securing a GPA of 3.81/4.0. Gained foundational knowledge in digital media and publishing technologies.",
+      "Worked as a solo developer under CEO for this project and built version 2 of this car painting web app. Used React.js, Redux, Material UI, Konva.js, Node.js, TypeScript, Express.js, and MySQL.",
+    icon: React.createElement(FaReact),
+    date: "Jul 2019 - Feb 2022",
+  },
+  {
+    title: "Senior Front End Engineer",
+    location: React.createElement(
+      "span",
+      {},
+      React.createElement(
+        "a",
+        {
+          href: "https://surrealevents.com/",
+          style: { textDecoration: "underline" },
+          target: "_blank",
+        },
+        "SURREAL Events"
+      ),
+      " | Alpharetta, GA"
+    ),
+    description:
+      "I was a first Front End developer in this company, and developed the Virtual Event app from scratch to production level. Collaborated with Game Team and Back End Team, and integrated game streaming with WebRTC and WebSocket. As the company grows, I worked as a Senior Front End Engineer and led & mentored junior developers. Tech is based on React.js, TypeScript, Next.js, Redux and Material UI.",
+    icon: React.createElement(FaReact),
+    date: "Mar 2016 - Jun 2019",
+  },
+  {
+    title: "Full Stack Developer",
+    location: React.createElement(
+      "span",
+      {},
+      React.createElement(
+        "a",
+        {
+          href: "https://rh.com/",
+          style: { textDecoration: "underline" },
+          target: "_blank",
+        },
+        "Restoration Hardware"
+      ),
+      " | Corte Madera, CA"
+    ),
+    description:
+      "I was in Cart/Checkout team in this ecommerce project, enhanced page performance, and fixed bugs and issues. Also Established POS(Point Of Sale) feature in the Cart/Checkout process. Used React.js, TypeScript, Node.js, GraphQL, Prisma, Material UI, PostgreSQL",
+    icon: React.createElement(FaReact),
+    date: "Apr 2014 - Feb 2016",
+  },
+  {
+    title: "BA in Computer Science",
+    location: "Colgate University | Hamilton, NY",
+    description: "",
     icon: React.createElement(LuGraduationCap),
-    date: "2019 Sep - 2023 Jun",
+    date: "Apr 2010 - Mar 2014",
   },
 ];
 
