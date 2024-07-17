@@ -27,7 +27,8 @@ export default function About() {
         This passion has driven my career primarily in startups. I enjoy solving
         challenges and technical difficulties. As a man, I find fun and
         excitement in overcoming them. <br />
-        "Believe and face it" I always say, diving into challenges bravely. 💪
+        &quot;Believe and face it&quot; I always say, diving into challenges
+        bravely. 💪
       </p>
 
       <p className="mb-3">
