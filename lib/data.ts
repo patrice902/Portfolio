@@ -1,9 +1,9 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import breadditImage from "@/public/breaddit.png";
-import gameHubImage from "@/public/game-hub.png";
-import typingSpeedImage from "@/public/typing-speed.png";
+import carImage from "@/public/car.png";
+import graphicsEditorImage from "@/public/graphics-editor.png";
+import chessImage from "@/public/chess.gif";
 
 export const links = [
   {
@@ -130,31 +130,27 @@ export type ProjectTags = (typeof projectsData)[number]["tags"];
 
 export const projectsData = [
   {
-    title: "Typing Speed",
-    description:
-      "A comprehensive typing speed test application that tracks your overall typing performance. It provides detailed statistics, including total words typed, errors made, and accuracy rate, allowing users to monitor their progress and improve their typing efficiency.",
-    tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
-    imageUrl: typingSpeedImage,
-    projectUrl: "https://github.com/Codefreyy/typing-speed-game",
-    demoUrl: "https://joy-typing-speed.netlify.app/",
+    title: "Car Painter",
+    description: `You can create a scheme with a specific car model, and paint it with various logos, shapes and texts. And, you can export it and use it in games. Also, it supports multi-user/real-time collaboration for team work and fun!`,
+    tags: ["React", "Redux", "Node", "Material UI", "Express", "MySQL", "Knex", "Objection", "Konva",  "TypeScript", "JavaScript", "HTML", "CSS"],
+    imageUrl: carImage,
+    projectUrl: "https://github.com/patrice902/Car-Painter",
   },
   {
-    title: "Game Hub",
+    title: "Online Chess Tournament",
     description:
-      "A responsive game grid application that offers search and filter functionality, and features infinite scrolling using React Query. It also includes robust form validation with Zod and efficient state management with Zustand.",
-    tags: ["React", "TypeScript", "Zod", "React Query", "Chakra UI"],
-    imageUrl: gameHubImage,
-    projectUrl: "https://github.com/Codefreyy/New-Game-hub",
-    demoUrl: "https://joy-gamehub.netlify.app/",
+      "An Online Chess Tournament Web app that schedules chess tournaments for registered users, manages Match-making, and run online chess game having video chat.",
+    tags: ["React", "JavaScript", "Material UI", "Redux", "HTML", "CSS", "Zoom", "Chess"],
+    imageUrl: chessImage,
+    projectUrl: "https://github.com/patrice902/OnlineChess",
   },
   {
-    title: "Breddit",
-    description: `A modern full-stack Reddit clone features infinite scrolling, secure authentication via NextAuth and Google, and a custom feed for authenticated users. It utilizes Upstash Redis for advanced caching and React-Query for efficient data fetching, ensuring a responsive and user-friendly experience with optimistic updates.
-            `,
-    tags: ["JavaScript", "HTML", "CSS3"],
-    imageUrl: breadditImage,
-    projectUrl: "https://github.com/Codefreyy/Breddit",
-    demoUrl: "https://joy-breaddit-reddit-clone.netlify.app/",
+    title: "Graphics Editor",
+    description:
+      "You can put images, graphics and texts into the board, and can resize/rotate/clip/edit them. Also, multi-users can join this board and draw together having fun!",
+    tags: ["React", "Redux", "Node", "Konva", "Socket.io",  "JavaScript", "HTML", "CSS"],
+    imageUrl: graphicsEditorImage,
+    projectUrl: "https://github.com/patrice902/Graphics-Editor",
   },
 ];
 
