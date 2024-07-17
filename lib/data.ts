@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import carImage from "@/public/car.png";
+import carImage from "@/public/Car.png";
 import graphicsEditorImage from "@/public/graphics-editor.png";
 import chessImage from "@/public/chess.gif";
 
