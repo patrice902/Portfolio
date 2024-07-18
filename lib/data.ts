@@ -130,13 +130,6 @@ export type ProjectTags = (typeof projectsData)[number]["tags"];
 
 export const projectsData = [
   {
-    title: "Car Painter",
-    description: `You can create a scheme with a specific car model, and paint it with various logos, shapes and texts. And, you can export it and use it in games. Also, it supports multi-user/real-time collaboration for team work and fun!`,
-    tags: ["React", "Redux", "Node", "Material UI", "Express", "MySQL", "Knex", "Objection", "Konva",  "TypeScript", "JavaScript", "HTML", "CSS"],
-    imageUrl: carImage,
-    projectUrl: "https://github.com/patrice902/Car-Painter",
-  },
-  {
     title: "Online Chess Tournament",
     description:
       "An Online Chess Tournament Web app that schedules chess tournaments for registered users, manages Match-making, and run online chess game having video chat.",
@@ -151,6 +144,13 @@ export const projectsData = [
     tags: ["React", "Redux", "Node", "Konva", "Socket.io",  "JavaScript", "HTML", "CSS"],
     imageUrl: graphicsEditorImage,
     projectUrl: "https://github.com/patrice902/Graphics-Editor",
+  },
+  {
+    title: "Car Painter",
+    description: `You can create a scheme with a specific car model, and paint it with various logos, shapes and texts. And, you can export it and use it in games. Also, it supports multi-user/real-time collaboration for team work and fun!`,
+    tags: ["React", "Redux", "Node", "Material UI", "Express", "MySQL", "Knex", "Objection", "Konva",  "TypeScript", "JavaScript", "HTML", "CSS"],
+    imageUrl: carImage,
+    // projectUrl: "https://github.com/patrice902/Car-Painter",
   },
 ];
 
