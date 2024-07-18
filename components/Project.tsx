@@ -41,18 +41,21 @@ export default function Project({
               {title}
             </h3>
 
-            <div className="flex gap-3 text-sm text-gray-500 dark:text-gray-300">
-              {" "}
-              <Link
-                href={projectUrl}
-                target="_blank"
-                className="w-full flex items-center gap-1  hover:underline underline-offset-2"
-              >
-                <span className="break-keep">Code</span>
+            {projectUrl ? (
+              <div className="flex gap-3 text-sm text-gray-500 dark:text-gray-300">
+                <Link
+                  href={projectUrl}
+                  target="_blank"
+                  className="w-full flex items-center gap-1  hover:underline underline-offset-2"
+                >
+                  <span className="break-keep">Code</span>
 
-                <FaGithubSquare className="w-5 h-5" />
-              </Link>
-            </div>
+                  <FaGithubSquare className="w-5 h-5" />
+                </Link>
+              </div>
+            ) : (
+              <></>
+            )}
 
             <Image
               src={imageUrl}
