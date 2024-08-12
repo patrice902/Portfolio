@@ -93,7 +93,7 @@ export default function Intro() {
             >
               <TypeAnimation
                 sequence={[
-                  "Senior Frontend Developer",
+                  "Senior Front End Developer",
                   1000,
                   "Senior Full Stack Developer",
                   1000,

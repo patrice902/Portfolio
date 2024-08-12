@@ -36,7 +36,7 @@ export default function About() {
         development, specialized in building web apps and websites using modern
         technologies like{" "}
         <span className="font-medium italic">
-          React, Node, TypeScript, Next, and Remix
+          React, Node, TypeScript, and Next
         </span>
         .
       </p>

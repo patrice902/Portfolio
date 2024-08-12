@@ -41,27 +41,6 @@ export const experiencesData = [
       React.createElement(
         "a",
         {
-          href: "https://evolutioniq.com/",
-          style: { textDecoration: "underline" },
-          target: "_blank",
-        },
-        "EvolutionIQ"
-      ),
-      " | New York, NY"
-    ),
-    description:
-      "Joined STD(Short Term Disability) team and built claims datatable, optimized it and improved it. Also, built claim analytics page. Used React.js, Material UI, TypeScript, Remix, Python, and FastAPI.",
-    icon: React.createElement(FaReact),
-    date: "Mar 2022 - Current",
-  },
-  {
-    title: "Senior Full Stack Engineer",
-    location: React.createElement(
-      "span",
-      {},
-      React.createElement(
-        "a",
-        {
           href: "https://www.tradingpaints.com/",
           style: { textDecoration: "underline" },
           target: "_blank",
@@ -73,10 +52,10 @@ export const experiencesData = [
     description:
       "Worked as a solo developer under CEO for this project and built version 2 of this car painting web app. Used React.js, Redux, Material UI, Konva.js, Node.js, TypeScript, Express.js, and MySQL.",
     icon: React.createElement(FaReact),
-    date: "Jul 2019 - Feb 2022",
+    date: "May 2021 - Current",
   },
   {
-    title: "Senior Front End Engineer",
+    title: "Front End Lead",
     location: React.createElement(
       "span",
       {},
@@ -94,7 +73,28 @@ export const experiencesData = [
     description:
       "I was a first Front End developer in this company, and developed the Virtual Event app from scratch to production level. Collaborated with Game Team and Back End Team, and integrated game streaming with WebRTC and WebSocket. As the company grows, I worked as a Senior Front End Engineer and led & mentored junior developers. Tech is based on React.js, TypeScript, Next.js, Redux and Material UI.",
     icon: React.createElement(FaReact),
-    date: "Mar 2016 - Jun 2019",
+    date: "Mar 2018 - Apr 2021",
+  },
+  {
+    title: "Full Stack Developer",
+    location: React.createElement(
+      "span",
+      {},
+      React.createElement(
+        "a",
+        {
+          href: "https://evolutioniq.com/",
+          style: { textDecoration: "underline" },
+          target: "_blank",
+        },
+        "EvolutionIQ"
+      ),
+      " | New York, NY"
+    ),
+    description:
+      "Joined STD(Short Term Disability) team and built claims datatable, optimized it and improved it. Also, built claim analytics page. Used React.js, Material UI, TypeScript, Remix, Python, and FastAPI.",
+    icon: React.createElement(FaReact),
+    date: "Mar 2016 - Feb 2018",
   },
   {
     title: "Full Stack Developer",
