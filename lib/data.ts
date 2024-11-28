@@ -212,6 +212,8 @@ export const skillsData = [
   "Next",
   "Remix",
   "Express",
+  "React Native",
+  "Expo",
   "HTML",
   "CSS",
   "jQuery",
